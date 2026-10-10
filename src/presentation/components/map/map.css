@@ -1,0 +1,45 @@
+/* Map pins and popups in the DESIGN.md palette. */
+
+.wf-pin {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--color-surface);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.wf-pin--restaurant {
+  background: var(--color-secondary);
+}
+.wf-pin--attraction {
+  background: var(--color-primary);
+}
+
+/* Quiet the busy OSM palette so only the pins carry color. */
+.leaflet-tile-pane {
+  filter: grayscale(1) contrast(0.9) brightness(1.04);
+}
+
+.leaflet-container {
+  font-family: var(--font-sans);
+  background: var(--color-surface-muted);
+}
+.leaflet-popup-content-wrapper {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-overlay);
+}
+.leaflet-popup-content {
+  margin: var(--spacing-md);
+  font-size: inherit;
+  line-height: inherit;
+}
+.leaflet-popup-tip {
+  box-shadow: none;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  color: var(--color-on-surface-variant);
+}
+.leaflet-container .leaflet-control-attribution {
+  font-size: 11px;
+}

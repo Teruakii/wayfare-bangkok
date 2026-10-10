@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "../presentation/styles/tokens.css";
+
+/* Wayfare is light-mode only (see DESIGN.md). */
+body {
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+}
